@@ -18,6 +18,13 @@ public class MyDemoLoggingAspect {
 	@Pointcut("execution(  *  com.bitlord.aopdemo.dao.*.*( .. ) )")
 	private void forDaoPackage() {}
 	
+	//  create pointcut for getter methods
+	
+	//  create pointcut for setter methods
+	
+	// create point: include package... exclude getter / setter
+	
+	
 	
 	 @Before( "forDaoPackage()" )
 	public void beforeAddAccountAdvice ( )  {	
