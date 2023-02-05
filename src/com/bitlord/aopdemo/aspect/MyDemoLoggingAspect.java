@@ -36,13 +36,13 @@ public class MyDemoLoggingAspect {
 	
 	
 	
-	 @Before( "forDaoPackage()" )
+	 @Before( " forDaoPackageNoGetteSetter() " )
 	public void beforeAddAccountAdvice ( )  {	
 		System.out.println("\n======>>>>> Executing @Before advice on method");
 	}
 	 
 	 
-	 @Before( "forDaoPackage()" )
+	 @Before( " forDaoPackageNoGetteSetter() " )
 	 public void performApiAnalytics () {
 			System.out.println("\n======>>>>> Performing API analytics");		 
 	 }
