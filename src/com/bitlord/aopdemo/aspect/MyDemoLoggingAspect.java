@@ -27,10 +27,12 @@ public class MyDemoLoggingAspect {
 	
 	//  create pointcut for setter methods
 	@Pointcut("execution(  *  com.bitlord.aopdemo.dao.*.set*( .. ) )")
-	private void setter () {}
+	private void setter() {}
 
 	
 	// create point: include package... exclude getter / setter
+	@Pointcut(" forDaoPackage() && !( getter() || setter() ) ")
+	private void forDaoPackageNoGetteSetter() {}
 	
 	
 	
