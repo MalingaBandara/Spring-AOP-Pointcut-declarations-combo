@@ -28,6 +28,8 @@ public class MainDemoApp {
 		
 		
 		// call the aacountdao getter / setter methods
+		theAccountDAO.setName("foobar");
+		theAccountDAO.setServiceCode("silver");
 		
 		
 		
